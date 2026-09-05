@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+
+#course-title{
+    display:block;
+    text-align: center;
+    background-color: rgba(0,90,156, 1);
+    color: #eee;
+    font-size: 1.4rem;
+    padding:20px;
+}
+
+.navigation{
+    background-color: rgba(53, 57, 53, 0.9) ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+    font-weight: 400;
+    
+}
+
+nav ul{
+    list-style-type: none;
+}
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6)
+}
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+main h1{
+    text-align: center;
+    font-weight: 400;
+    padding:15px;
+}
+
+#main-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+}
+
+.card{
+    border: 2px solid rgba(160, 160, 160, 0.8) ;
+    border-radius: 10px;
+
+}
+
+.card h2{
+    background-color: rgba(0, 90, 156, 1);
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+.inside-card{
+    padding:20px;
+    display:grid;
+    grid-template-columns: 2.8fr 1fr;
+    grid-template-rows: 2fr 30px 2fr;
+    column-gap:50px;
+}
+
+#flag{
+    float:left;
+    margin:7px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.7);
+}
+
+#flag-section{
+    grid-column: 1/2 ;
+    padding:10px;
+    display:flex;
+}
+
+h3{
+    text-align: center;
+    border-bottom: 2px solid rgba(160, 160, 160, 0.8);
+    padding-bottom: 10px ;
+}
+
+figure{
+    display: flex;
+    flex-flow: column;
+    padding-right:5px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+#profile-picture{
+    border: 1px solid rgba(160, 160, 160, 0.8);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+}
+
+#list-grid{
+    display: grid;
+    grid-template-rows: 100px 150px 100px;
+    justify-content: left;
+}
+
+
+#web-list{
+    grid-row: 2/3;
+    padding-left:50px;
+    text-decoration: none;
+}
+
+#web-list li{
+    padding:10px;
+    
+}
+
+#web-list a{
+    text-decoration: none;
+    color:black
+}
+
+#web-list a:hover {
+    border: 2px solid rgba(160, 160, 160, 0.3);
+}
+
+
+footer{
+    display: block;
+    text-align: center;
+    background-color: rgba(0, 90, 156, 1);
+    color: #eee;
+    font-size: 1.4rem;
+    padding: 40px;
+}
