@@ -8,6 +8,10 @@ body{
     font-family: "Roboto", sans-serif;
 }
 
+header{
+    padding-bottom:10px;
+}
+
 
 #course-title{
     display:block;
@@ -155,4 +159,5 @@ footer{
     color: #eee;
     font-size: 1.4rem;
     padding: 40px;
+    
 }
