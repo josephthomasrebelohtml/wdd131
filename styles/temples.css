@@ -1,0 +1,122 @@
+:root {
+    --text-color: #eee;
+    --background-color: #004687;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+header {
+    display: block;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 1.4rem;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.title {
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #eee;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu:hover {
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X"
+
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background-color: var(--background-color);
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.open a {
+    display: block;
+}
+
+.navigation a:hover {
+    background-color: rgba(112, 41, 99, 1);
+
+    font-weight: 1000;
+}
+
+h1 {
+    font-family: Apple Chancery, cursive;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.pictures{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin-bottom: 100px;
+}
+
+.pictures figcaption{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgba(112, 41, 99, 1)
+}
+.pictures img{
+    width:100%;
+    height: auto;
+    padding: 5px; 
+    box-shadow: 0 0 5px #333;
+}
+
+
+footer {
+    display: block;
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 1.4rem;
+    padding: 40px;
+    padding-bottom: 70px;
+
+}
