@@ -57,6 +57,14 @@ header {
 
 }
 
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background-color: var(--background-color);
+}
+
 .navigation {
     display: flex;
     flex-direction: column;
@@ -89,23 +97,24 @@ h1 {
     padding-bottom: 30px;
 }
 
-.pictures{
-    display:grid;
+.pictures {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 25px;
     margin-bottom: 100px;
 }
 
-.pictures figcaption{
+.pictures figcaption {
     text-align: center;
     font-size: 1.3rem;
     font-weight: 600;
     color: rgba(112, 41, 99, 1)
 }
-.pictures img{
-    width:100%;
+
+.pictures img {
+    width: 100%;
     height: auto;
-    padding: 5px; 
+    padding: 5px;
     box-shadow: 0 0 5px #333;
 }
 
