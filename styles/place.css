@@ -1,7 +1,7 @@
 :root {
     --text-color: #ffff;
     --blue-background: #004687;
-    --green-background: #008000;
+    --green-background: #186618;
     --grey-box-background:rgba(255, 255, 255, 0.7) ;
 }
 
@@ -29,7 +29,6 @@ main{
     display: grid;
     grid-template-rows: 1.5fr 1fr 1fr;
     align-items: center;
-    gap: 15px;
     padding-bottom: 20px;
     background-color: rgb(245,245,245);
 }
@@ -41,6 +40,7 @@ h2 {
 
 main p{
     text-align: center;
+    font-weight: 650;
 }
 
 .info {
@@ -52,6 +52,7 @@ main p{
     width: 100%;
     height: auto;
     display: block;
+    border-bottom: 5px solid var(--blue-background);
 }
 
 .weather{
@@ -64,13 +65,17 @@ main p{
 
 
 footer {
-    border-top: 20px solid var(--blue-background);
     display: block;
     text-align: center;
     background-color: var(--green-background);
     color: var(--text-color);
     font-size: 1.05rem;
+    font-weight: 700;
     padding: 40px;
     padding-bottom: 70px;
 
+}
+
+#currentyear, #lastModified{
+    color: var(--text-color);
 }
