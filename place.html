@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brazil Country Page</title>
+    <title>Brazil Place Page</title>
     <meta name="description"
         content="Page about Brazil, containing information and pictures about this country, adapted for mobile and desktop viewing.">
     <meta name="author" content="Joseph Thomas Rebelo La Rocque da Silva">
@@ -13,16 +14,46 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
-    
+
     <script src="scripts/place.js" defer></script>
 </head>
+
 <body>
 
     <header>
-        <h1 class="title">Brazil</>
+        <h1 class="title">Brazil</h1>
     </header>
 
-    <main>
+    <main class="main">
+
+        <picture>
+            <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+            <source media="(min-width: 500px )" srcset="images/hero-medium.webp">
+            <img class="birds" src="images/hero-mobile.webp" alt="colorful birds from the country of Brazil">
+        </picture>
+        
+        <div class="box1">
+            <h2>Data</h2>
+            <p><span class="info">Population:</span> 214,211,951</p>
+            <p><span class="info">Area:</span> 8,510,346 sq km</p>
+            <p><span class="info">Capital:</span> Brasilia</p>
+            <p><span class="info">Languages:</span> Portuguese</p>
+            <p><span class="info">Currency:</span> Real (BRL)</p>
+            <p><span class="info">Time Zone:</span> UTC-02:00 to -05:00</p>
+            <p><span class="info">Calling Code:</span> +55</p>
+            <p><span class="info">Internet TLD:</span> .br</p>
+        </div>
+
+        <div class="box2">
+            <h2>Weather</h2>
+            <img class="weather" src="images/weather.svg" alt="yellow cloud with a sun behind it">
+            <p><span class="info">Temperature:</span> <span id="temperature">23</span>°C</p>
+            <p><span class="info">Conditions:</span> Clear with periodic clouds</p>
+            <p><span class="info">Wind:</span> <span id="windSpeed">8</span> km/h</p>
+            <p><span class="info">Wind Chill:<span id="windChill"></span></span> </p>
+
+
+        </div>
 
     </main>
 
@@ -30,6 +61,7 @@
         <p>©️<span id="currentyear"></span>🐦‍⬛ Joseph Thomas Rebelo La Rocque da Silva 🐦‍⬛ Canada</p>
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
-    
+
 </body>
+
 </html>
