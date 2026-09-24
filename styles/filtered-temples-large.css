@@ -1,0 +1,27 @@
+@media (min-width: 700px){
+    section{
+        height: 300px;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    header{
+        display: flex;
+
+        justify-content: space-between;
+    }
+    .navigation{
+        flex-direction: row;
+    }
+    .navigation ul{
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+    
+    .navigation a{
+                display: block;
+                    flex: 1 1 100%;
+    }
+}

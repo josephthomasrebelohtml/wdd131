@@ -1,0 +1,151 @@
+:root {
+    --text-color: #eee;
+    --background-color: #004687;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+header {
+    display: block;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 1.4rem;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.title {
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #eee;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu:hover {
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X"
+
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background-color: var(--background-color);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background-color: var(--background-color);
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.open a {
+    display: block;
+}
+
+.navigation a:hover {
+    background-color: rgba(112, 41, 99, 1);
+
+    font-weight: 1000;
+}
+
+h1 {
+    font-family: Apple Chancery, cursive;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.pictures {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin-bottom: 100px;
+}
+
+.pictures{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+}
+
+.pictures img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 5px #333;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    max-width: 300px;
+    justify-content: center;
+    padding: 9px;
+    background-color: rgba(192, 192, 192, 0.3);
+    border: 1px solid rgba(128, 128, 128, 0.7);
+    height: 350px;
+}
+
+section img{
+    margin-top: auto;
+}
+
+.info{
+    color: rgba(112, 41, 99, 1);
+    font-weight: 800;
+}
+
+
+footer {
+    display: block;
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 1.4rem;
+    padding: 40px;
+    padding-bottom: 70px;
+
+}
