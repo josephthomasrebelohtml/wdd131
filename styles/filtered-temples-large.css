@@ -1,6 +1,7 @@
 @media (min-width: 700px){
     section{
         height: 300px;
+        width: 250px;
     }
 
     #menu{
