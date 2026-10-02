@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Merriweather Sans", sans-serif;
+
+}
+
+header {
+    background-color: #B01022;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 15px;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+h3 {
+    padding: 5px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+
+#red {
+    color: #B01022;
+}
+
+#white {
+    color: #FFFFFF;
+    background-color: #B01022;
+}
+
+#green {
+    color: #005F16;
+}
+
+.roboto {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: #B01022;
+    color: #FFFFFF;
+    padding: 10px;
+}
