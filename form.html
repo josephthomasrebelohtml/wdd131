@@ -26,7 +26,7 @@
         <form method="get" action="review.html" class="form">
 
                 <div>
-                <label for="products"><p>Product Name (Required)</p>
+                <label for="products"><span class="p">Product Name (Required)</span>
                     <select name="product-name" id="products" required>
                         <option value="" disabled selected>Select a Product...</option>
                     </select>
@@ -34,7 +34,7 @@
                 </div>
                 
                 <div class="stars">
-                <p>Overall Rating (Required)</p>
+                <p class="p">Overall Rating (Required)</p>
 
                 <label for="1" class="star"><input type="radio" name="rating" id="1" value="1" required>&star;</label>
                 <label for="2" class="star"><input type="radio" name="rating" id="2" value="2" required>&star;&star;</label>
@@ -43,7 +43,7 @@
                 <label for="5" class="star"><input type="radio" name="rating" id="5" value="5" required>&star;&star;&star;&star;&star;</label>
                 </div>
                 <div>
-                    <label for="installation"><p>Date of installation (Required)</p><input type="date" name="installation" id="installation" required></label>
+                    <label for="installation"><span class="p">Date of installation (Required)</span><input type="date" name="installation" id="installation" required></label>
                 </div>
                 <div>
                 <p>Which features did you find useful in the product? <br>(Check all that apply)</p>
@@ -55,12 +55,12 @@
                 </div>
 
                 <div>
-                <label for="review"><p>Written Review (Optional)</p></label>
+                <label for="review"><span class="p">Written Review (Optional)</span></label>
                 <textarea name="review" id="review" rows="4" cols="23"></textarea>
                 </div>
 
                 <div>
-                <label for="name"><p>Your Name (Optional)</p></label>
+                <label for="name"><span class="p">Your Name (Optional)</span></label>
                 <input type="text" name="name" id="name">
                 </div>
 
