@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form | Joseph Thomas Rebelo La Rocque da Silva</title>
+    <meta name="description"
+        content="Form for a Product Review of several products, including star ratings and liked features.">
+    <meta name="author" content="Joseph Thomas Rebelo La Rocque da Silva">
+    <link rel="stylesheet" href="styles/form-mobile.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html" >
+
+            <fieldset>
+                <label for="products"> <div class="description">Product Name</div>
+                    <select name="product-name" id="products" required>
+                        <option value="" disabled selected>Select a Product...</option>
+                    </select>
+                </label>
+                
+                <div class="description">Overall Rating</div>
+                <label><input type="radio" name="rating" value="1" required>&star;</label>
+                <label><input type="radio" name="rating" value="2" required>&star;&star;</label>
+                <label><input type="radio" name="rating" value="3" required>&star;&star;&star;</label>
+                <label><input type="radio" name="rating" value="4" required>&star;&star;&star;&star;</label>
+                <label><input type="radio" name="rating" value="5" required>&star;&star;&star;&star;&star;</label>
+
+                <label for="installation">Date of installation<input type="date" name="installation" id="installation" required></label>
+
+                <div class="description">Which features did you find useful in the product? <br>(Check all that apply)</div>
+                <label><input type="checkbox" name="durability" value="durability" id="durability"> Durability</label>
+                <label><input type="checkbox" name="ease" value="ease" id="ease"> Ease of Use</label>
+                <label><input type="checkbox" name="performance" value="performance" id="performance"> Performance</label>
+                <label><input type="checkbox" name="design" value="design" id="design"> Design</label>
+
+                <label for="review">Written Review (Optional)</label>
+                <textarea name="review" id="review" rows="4" cols="23"></textarea>
+
+                <label for="name">Your Name (Optional)</label>
+                <input type="text" name="name" id="name">
+
+                <input type="submit" value="Post Review" id="submit-button">
+
+            </fieldset>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>©️<span id="currentyear"></span>🐦‍⬛ Joseph Thomas Rebelo La Rocque da Silva 🐦‍⬛ Canada</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
