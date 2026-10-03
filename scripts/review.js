@@ -12,8 +12,6 @@ document.getElementById("lastModified").textContent = document.lastModified;
 // Local Storage
 
 let reviewsCompleted = Number(window.localStorage.getItem("reviewsCompletedLs")) || 0;
-reviewsCompleted++;
-localStorage.setItem("reviewsCompletedLs", reviewsCompleted);
 
 const reviews = document.querySelector("#reviews");
 if (reviewsCompleted === 1) {

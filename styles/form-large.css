@@ -1,0 +1,9 @@
+@media (min-width: 700px){
+    p{
+        font-size: 1.1rem;
+    }
+    header{
+        font-size: 1.4rem;
+        text-align: left;
+    }
+}

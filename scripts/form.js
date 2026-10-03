@@ -52,10 +52,10 @@ function createListItem(id,name) {
 
 
 // Local Storage storing
-const submitButton = document.querySelector("#submit-button")
+const form = document.querySelector("form")
 let reviewsCompleted = Number(window.localStorage.getItem("reviewsCompletedLs")) || 0;
 
-submitButton.addEventListener("submit", function () {
+form.addEventListener("submit", function () {
     reviewsCompleted++;
     localStorage.setItem("reviewsCompletedLs", reviewsCompleted);
 });
