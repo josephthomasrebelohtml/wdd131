@@ -46,9 +46,19 @@
         margin: 0;
     }
 
+        #home-products {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+
 
     footer{
         font-size: 1.4rem;
+    }
+    footer img{
+        max-width: 75px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
 
