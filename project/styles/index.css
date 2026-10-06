@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 html,
@@ -17,7 +17,7 @@ body {
 }
 
 
-body{
+body {
     font-family: "Merriweather Sans", sans-serif;
     min-height: 100vh;
     display: flex;
@@ -28,12 +28,12 @@ main {
     flex: 1;
 }
 
-h2{
+h2 {
     text-align: center;
 
 }
 
-img{
+img {
     height: auto;
 }
 
@@ -49,35 +49,36 @@ header {
     padding-bottom: 10px;
 }
 
-header img{
+header img {
     width: 100%;
     max-width: 250px;
 }
 
 
-.navigation{
+.navigation {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
-.navigation a{
+
+.navigation a {
     text-decoration: none;
     color: var(--text-color);
     padding: 10px;
     display: none;
 }
 
-.navigation li{
+.navigation li {
     display: none;
 }
 
-.open li:hover{
+.open li:hover {
     background-color: var(--green-background);
     font-weight: 700;
 }
 
-.open li{
+.open li {
     padding: 5px;
     display: block;
 }
@@ -87,7 +88,7 @@ header img{
     display: block;
 }
 
-.menu{
+.menu {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -101,26 +102,28 @@ header img{
 
 /*               MAIN                      */
 
-main{
+main {
     max-width: 1200px;
     margin: 0 auto;
     padding-right: 20px;
     padding-left: 20px;
 }
 
-.home-description{
+.home-description {
     display: grid;
     justify-items: center;
-    
+
 }
-.home-description p,h2{
+
+.home-description p,
+h2 {
     padding-top: 10px;
     margin-right: 15px;
     margin-left: 15px;
-    
+
 }
 
-main img{
+main img {
     width: 100%;
     max-width: 600px;
     border-radius: 10px;
@@ -128,16 +131,16 @@ main img{
     box-shadow: 0 0 5px #333;
 }
 
-figcaption{
+figcaption {
     text-align: center;
     font-weight: 700;
 }
 
-.margin-top{
+.margin-top {
     margin-top: 15px;
 }
 
-#home-products{
+#home-products {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -149,19 +152,25 @@ figcaption{
 
 }
 
-#home-products img{
+#home-products img {
     margin: 10px;
     max-width: 100%;
-    height: 158px;
+    width: auto;
+    height: 168px;
+    max-height: 100%;
     margin-top: 25px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+
 }
 
-#home-order-button{
+#home-order-button {
     text-align: center;
     margin: 22px;
 
 }
-#home-order-button a{
+
+#home-order-button a {
     text-decoration: none;
     color: var(--text-color);
     background-color: var(--green-background);
@@ -171,7 +180,8 @@ figcaption{
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
 }
-#home-order-button a:hover{
+
+#home-order-button a:hover {
     padding: 15px;
     font-weight: 700;
     font-size: 1.55rem;
@@ -179,14 +189,14 @@ figcaption{
 
 /*               FOOTER                      */
 
-footer{
+footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
     background-color: var(--background-color);
     color: var(--text-color);
     max-height: 200px;
-    font-size: 4vw;
+    font-size: 3.5vw;
     padding-top: 15px;
     padding-left: 10px;
     padding-right: 10px;
@@ -194,14 +204,14 @@ footer{
 
 }
 
-footer img{
+footer img {
     margin-right: 10px;
     margin-left: 10px;
     width: 10vw;
     max-width: 45px;
 }
 
-.social-media{
+.social-media {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -209,6 +219,6 @@ footer img{
 }
 
 
-footer a{
+footer a {
     text-decoration: none;
 }
