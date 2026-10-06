@@ -8,10 +8,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
+html,
+body {
+    min-height: 100%;
+}
+
+
 body{
-    font-family: "Merriweather Sans", sans-serif;;
+    font-family: "Merriweather Sans", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 h2{
@@ -170,18 +184,27 @@ footer{
     place-items: center;
     background-color: var(--background-color);
     color: var(--text-color);
-    padding-bottom: 20%;
+    max-height: 200px;
     font-size: 1rem;
     padding-top: 15px;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 30px;
+    
 }
 
 footer img{
     margin-right: 10px;
     margin-left: 10px;
     width: 100%;
-    max-width: 25px;
+    max-width: 55px;
+}
+
+.social-media{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
 }
 
 
