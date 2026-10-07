@@ -35,43 +35,117 @@
     <main>
         
         <h2>Tony's Pizza Palace Menu - Brazilian Inspired Pizzas!</h2>
-        <p>Are you looking to try something new?</p>
-        <p>Are you a Brazilian wanting to remember the unique taste of pizzas in Brazil?</p>
-        <p>If you are a new or frequent customer, either way, our pizzas will always bring you joy and remember how New York City
-        always surprises you with its food variety!</p>
-        <br>
-        <p>All item are available for pickup, Order in our website or call us at +1 212-123-6789!</p>
 
-        <h3>Traditional Flavors</h3>
-
-        <div class="menu-section">
-            <div class="menu-card"></div>
-            <div class="menu-card"></div>
-            <div class="menu-card"></div>
-            <div class="menu-card"></div>
+        <div id="menu-description">
+            <p>Are you looking to try something new?</p>
+            <p>Are you a Brazilian wanting to remember the unique taste of pizzas in Brazil?</p>
+            <p>If you are a new or frequent customer, either way, our pizzas will always bring you joy and remember how New York City
+            always surprises you with its food variety!</p>
+            <br>
+            <p>All item are available for pickup, Order on our website or call us at +1 212-123-6789!</p>
         </div>
 
-        <h3>Premium Flavors</h3>
+        <h3 class="menu-green-background">Traditional Flavors (14$)</h3>
+
         <div class="menu-section">
-            <div class="menu-card"></div>
-            <div class="menu-card"></div>
-            <div class="menu-card"></div>
+            <div class="menu-card">
+                <h4>Pepperoni</h4>
+                <p>Homemade Tomato Sauce, Pepperoni, Basil, Mozzarella and Oregano.</p>
+            </div>
+            <div class="menu-card">
+                <h4>Margherita</h4>
+                <p>Homemade Tomato Sauce, Basil, Mozzarella, Tomato Slices and Oregano.</p>
+            </div>
+            <div class="menu-card">
+                <h4>Four Cheeses</h4>
+                <p>Homemade Tomato Sauce, Basil, Mozzarella, Parmesan, Provolone, Brazilian Cream Cheese and Oregano.</p>
+            </div>
+            <div class="menu-card">
+                <h4>Chicken With Brazilian Cream Cheese</h4>
+                <p>Homemade Tomato Sauce, Basil, Mozzarella, Shredded Chicken, Brazilian Cream Cheese and Oregano.</p>
+            </div>
+        </div>
+
+        <h3 class="menu-green-background">Premium Flavors (21$)</h3>
+        <div class="menu-section">
+            <div class="menu-card">
+                <h4>Beef Strips with Four Cheeses</h4>
+                <p>Homemade Tomato Sauce, Basil, Mozzarella, Sirloin Beef Strips, Parmesan, Provolone, Brazilian Cream Cheese and Oregano.</p>
+            </div>
+            <div class="menu-card">
+                <h4>Beef Ribs With Brazilian Cream Cheese</h4>
+                <p>Homemade Tomato Sauce, Basil, Mozzarella, Shredded Beef Ribs, Brazilian Cream Cheese and
+                    Oregano.</p>
+            </div>
+            <div class="menu-card">
+                <h4>Chicken Strogonoff</h4>
+                <p>Homemade Tomato Sauce, Basil, Mozzarella, Chicken Strogonoff, Thin Potato Sticks, Champignon Mushrooms and
+                    Oregano.</p>
+            </div>
 
         </div>
 
 
-        <h3>Dessert Flavors</h3>
+        <h3 class="menu-green-background">Dessert Flavors (15$)</h3>
 
         <div class="menu-section">
-            <div class="menu-card"></div>
-            <div class="menu-card"></div>
-            <div class="menu-card"></div>
+            <div class="menu-card">
+                <h4>Double Chocolate</h4>
+                <p>Condensed Milk, Dark Chocolate and White Chocolate</p>
+            </div>
+            <div class="menu-card">
+                <h4>Snowy Banana</h4>
+                <p>Heavy Cream, Bananas, Cinnamon and White Chocolate</p>
+            </div>
+            <div class="menu-card">
+                <h4>Dark Strawberries</h4>
+                <p>Condensed Milk, Dark Chocolate and Strawberry Slices</p>
+            </div>
         </div>
-
-
-
 
         <p id="home-order-button"><a href="order.html">Order Now!</a></p>
+
+        <h2>Want Us To Add Your Idea?</h2>
+        <p>Tell us what you have in mind!</p>
+
+        <div>
+
+        <form action="#" method="get" id="menu-form">
+            
+            <div>
+                <label for="name"><span>Name Of The Flavor (Required)</span></label>
+                <input type="text" name="name" id="name" required>
+            </div>
+
+            <div>
+
+                <p>Type Of Pizza (Required)</p>
+
+                <label for="savoury" class="pizza-type"><input type="radio" name="type" id="savoury" value="savoury" required>🍕 Savoury Pizza 🍕</label>
+                <label for="dessert" class="pizza-type"><input type="radio" name="type" id="dessert" value="dessert" required>🍰Dessert Pizza 🍰</label>
+
+            </div>
+
+            <div>
+                <label for="ingredients"><span>Ingredients (Required)</span></label>
+                <textarea name="ingredients" id="ingredients" rows="4" cols="23" required></textarea>
+            </div>
+
+            <div>
+                <label for="pizza-description"><span>Describe Your Pizza! (Optional)</span></label>
+                <textarea name="pizza-description" id="pizza-description" rows="4" cols="23"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Send Your Pizza Idea!" id="submit-button">
+            </div>
+        </form>
+
+        </div>
+
+
+
+
 
 
 

@@ -46,10 +46,18 @@
         margin: 0;
     }
 
-        #home-products {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr;
-        }
+    #home-products {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    #home-order-button a {
+        font-size: 2vw;
+    }
+
+    #home-order-button a:hover{
+        font-size: 2.1vw;
+    }
 
 
     footer{
@@ -59,6 +67,18 @@
         max-width: 75px;
         margin-right: 10px;
         margin-left: 10px;
+    }
+
+    .menu-green-background{
+        font-size: 2vw;
+        width: 30vw;
+    }
+
+    .menu-card h4{
+        font-size: 2.5vw;
+    }
+    .menu-card p{
+        font-size: 1.45vw;
     }
 
 
