@@ -25,9 +25,7 @@ body {
     flex-direction: column;
 }
 
-main {
-    flex: 1;
-}
+
 
 h2 {
     text-align: center;
@@ -108,6 +106,7 @@ main {
     margin: 0 auto;
     padding-right: 20px;
     padding-left: 20px;
+    flex: 1;
 }
 
 .home-description {
@@ -256,7 +255,66 @@ footer a {
     padding-bottom: 8px;
 }
 
-#menu-form{
-    width: 600px;
-    margin: 0 auto;
+
+
+.order-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-section img{
+    width: 100%;
+    max-width: 10vw;
+    margin-top: 0;
+}
+
+.order-card{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(238, 238, 238, 0.5);
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 75vw;
+}
+
+.order-description{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    font-size: 2.5vw;
+}
+
+.order-buttons{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    font-size: 4vw;
+}
+
+.order-button{
+    width: 6vw;
+    height: 6vw;
+    border: none;
+    border-radius: 5px;
+    background: var(--text-color);
+    font-size: 4vw;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0, 0.6);
+
+}
+
+.order-price{
+    background-color: #005F16;
+    width: 14vw;
+    border-radius: 10px;
+    padding: 4px;
+    color: var(--text-color);
+    font-family: var(--roboto-font);
+    font-size: 4vw;
+    font-weight: 700;
 }
