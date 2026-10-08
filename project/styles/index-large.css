@@ -134,8 +134,12 @@
         font-size: 2vw;
     }
 
-    #order-total{
+    #order-total {
         font-size: 2vw;
+    }
+
+    #confirmation-description {
+        font-size: 1.5vw;
     }
 
 

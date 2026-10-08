@@ -21,9 +21,9 @@ function addOpenClasses() {
 // Order System
 
 let pizzaValues = {
-    traditional: 24.00,
-    premium: 32.00,
-    dessert: 23.00
+    traditional: 23.99,
+    premium: 31.99,
+    dessert: 21.99
 };
 
 let values = [];
@@ -137,7 +137,7 @@ function CalculateTotal(array) {
     const initialValue = 0;
     const total = array.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue,);
     
-    totalPrice.innerHTML = `Total: $${total}.00`;
+    totalPrice.innerHTML = `Total: $${total.toFixed(2)}`;
 }
 
 function AddPizzaValue(price) {
