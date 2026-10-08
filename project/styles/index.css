@@ -265,8 +265,11 @@ footer a {
 
 .order-section img{
     width: 100%;
-    max-width: 10vw;
+    max-width: 20vw;
     margin-top: 0;
+    margin-left: 4px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
 }
 
 .order-card{
@@ -277,7 +280,8 @@ footer a {
     background-color: rgba(238, 238, 238, 0.5);
     border-radius: 10px;
     border: 1px solid black;
-    width: 75vw;
+    width: 80vw;
+    gap: 1px;
 }
 
 .order-description{
@@ -305,7 +309,11 @@ footer a {
     font-weight: 800;
     cursor: pointer;
     box-shadow: 0 1px 3px rgba(0,0,0, 0.6);
+}
 
+.order-button:hover{
+    background-color: var(--green-background);
+    color: var(--text-color);
 }
 
 .order-price{
@@ -317,4 +325,63 @@ footer a {
     font-family: var(--roboto-font);
     font-size: 4vw;
     font-weight: 700;
+}
+
+#order-complete{
+    margin-top: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form label{
+    display: block;
+    color: var(--text-color);
+    background-color: var(--green-background);
+    border-radius: 10px;
+    padding: 3px;
+    width: 50vw;
+    font-size: 3vw;
+}
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"]{
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: 0.70rem;
+    width: 40vw;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    appearance: none;
+    font-size: 20px;
+}
+
+.form input[type="submit"]{
+    padding: 20px;
+    width: 40vw;
+    border-radius: 4px;
+    font-size: 4vw;
+    font-family: var(--roboto-font);
+    font-weight: 700;
+    background-color: var(--green-background);
+    color: var(--text-color);
+}
+
+.form input[type="submit"]:hover{
+    font-weight: 800;
+}
+
+.form div{
+    margin-top: 10px;
+}
+
+#order-total{
+    margin: 10px;
+    font-family: var(--roboto-font);
+    font-size: 4vw;
+    font-weight: 800;
 }

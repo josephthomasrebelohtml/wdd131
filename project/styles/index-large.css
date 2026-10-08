@@ -3,33 +3,36 @@
         --text-color: #FFFFFF;
         --background-color: #B01022;
         --green-background: #005F16;
-        }
+    }
 
     .menu {
         display: none;
     }
-    header{
+
+    header {
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
-    .navigation li{
+
+    .navigation li {
         padding: 20px;
         font-size: 2.4rem;
     }
-    .navigation li:hover{
+
+    .navigation li:hover {
         background-color: var(--green-background);
         border-radius: 10px;
         font-weight: 700;
-        
+
     }
 
-    .navigation{
+    .navigation {
         flex-direction: row;
     }
 
     .navigation a,
-    .navigation li{
+    .navigation li {
         display: block;
     }
 
@@ -37,12 +40,13 @@
 
     /*               MAIN                      */
 
-    .home-description{
+    .home-description {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         column-gap: 20px;
     }
-    .home-description img{
+
+    .home-description img {
         margin: 0;
     }
 
@@ -55,41 +59,47 @@
         font-size: 2vw;
     }
 
-    #home-order-button a:hover{
+    #home-order-button a:hover {
         font-size: 2.1vw;
     }
 
 
-    footer{
+    footer {
         font-size: 1.4rem;
     }
-    footer img{
+
+    footer img {
         max-width: 75px;
         margin-right: 10px;
         margin-left: 10px;
     }
 
-    .menu-green-background{
+    .menu-green-background {
         font-size: 2vw;
         width: 30vw;
     }
 
-    .menu-card h4{
+    .menu-card h4 {
         font-size: 2.5vw;
     }
-    .menu-card p{
+
+    .menu-card p {
         font-size: 1.45vw;
     }
 
-    .order-card{
+    .order-card {
         width: 50vw;
     }
 
-    .order-description{
+    .order-section img {
+        max-width: 9.5vw;
+    }
+
+    .order-description {
         font-size: 0.8vw;
     }
 
-    .order-price{
+    .order-price {
         font-size: 1vw;
         width: 4vw;
     }
@@ -101,8 +111,31 @@
         font-weight: 700;
     }
 
-    .order-buttons{
+    .order-buttons {
         font-size: 1.4vw;
+    }
+
+    .form label {
+        width: 17vw;
+        font-size: 1vw;
+    }
+
+    .form input[type="text"],
+    .form input[type="email"],
+    .form input[type="tel"] {
+        border: solid 1px #999;
+        border-radius: 4px;
+        padding: 0.70rem;
+        width: 20vw;
+    }
+
+    .form input[type="submit"] {
+        width: 20vw;
+        font-size: 2vw;
+    }
+
+    #order-total{
+        font-size: 2vw;
     }
 
 
