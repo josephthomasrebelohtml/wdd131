@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tonys-pizza-palace.com</title>
+    <title>tonys-pizza-palace.com/order</title>
     <meta name="description"
-        content="Home page for Tony's Pizza Palace restaurant, including description, top products and a order now button.">
+        content="Ordering page for Tony's Pizza Palace, containing all the different kinds of flavors, contact information for the customer, and a total.">
     <meta name="author" content="Joseph Thomas Rebelo La Rocque da Silva">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/index-large.css">
-    <script src="scripts/index.js" defer></script>
+    <script src="scripts/order.js" defer></script>
 </head>
 
 <body>
@@ -48,8 +48,8 @@
                     <p class="order-price">$24.00</p>
                     <div class="order-buttons">
                         <button type="button" class="order-button traditional-negative" aria-label="">-</button>
-                        <p>0</p>
-                        <button type="button" class="order-button" aria-label="">+</button>
+                        <p class="order-quantity">0</p>
+                        <button type="button" class="order-button traditional-addition" aria-label="">+</button>
                     </div>
                 </div>
 
@@ -62,8 +62,8 @@
                     <p class="order-price">$24.00</p>
                     <div class="order-buttons">
                         <button type="button" class="order-button traditional-negative" aria-label="">-</button>
-                        <p>0</p>
-                        <button type="button" class="order-button" aria-label="">+</button>
+                        <p class="order-quantity">0</p>
+                        <button type="button" class="order-button traditional-addition" aria-label="">+</button>
                     </div>
                 </div>
 
@@ -77,8 +77,8 @@
                     <p class="order-price">$24.00</p>
                     <div class="order-buttons">
                         <button type="button" class="order-button traditional-negative" aria-label="">-</button>
-                        <p>0</p>
-                        <button type="button" class="order-button" aria-label="">+</button>
+                        <p class="order-quantity">0</p>
+                        <button type="button" class="order-button traditional-addition" aria-label="">+</button>
                     </div>
                 </div>
 
@@ -92,8 +92,8 @@
                     <p class="order-price">$24.00</p>
                     <div class="order-buttons">
                         <button type="button" class="order-button traditional-negative" aria-label="">-</button>
-                        <p>0</p>
-                        <button type="button" class="order-button" aria-label="">+</button>
+                        <p class="order-quantity">0</p>
+                        <button type="button" class="order-button traditional-addition" aria-label="">+</button>
                     </div>
                 </div>
 
@@ -113,9 +113,9 @@
                         Cheese and Oregano</p>
                     <p class="order-price">$32.00</p>
                     <div class="order-buttons">
-                        <button type="button" class="order-button" aria-label="">-</button>
-                        <p>0</p>
-                        <button type="button" class="order-button" aria-label="">+</button>
+                        <button type="button" class="order-button premium-negative" aria-label="">-</button>
+                        <p class="order-quantity">0</p>
+                        <button type="button" class="order-button premium-addition" aria-label="">+</button>
                     </div>
                 </div>
 
@@ -128,9 +128,9 @@
                     <p>Homemade Tomato Sauce, Mozzarella, Shredded Beef Ribs, Brazilian Cream Cheese and Oregano</p>
                     <p class="order-price">$32.00</p>
                     <div class="order-buttons">
-                        <button type="button" class="order-button" aria-label="">-</button>
-                        <p>0</p>
-                        <button type="button" class="order-button" aria-label="">+</button>
+                        <button type="button" class="order-button premium-negative" aria-label="">-</button>
+                        <p class="order-quantity">0</p>
+                        <button type="button" class="order-button premium-addition" aria-label="">+</button>
                     </div>
                 </div>
 
@@ -144,9 +144,9 @@
                         and Oregano</p>
                     <p class="order-price">$32.00</p>
                     <div class="order-buttons">
-                        <button type="button" class="order-button" aria-label="">-</button>
-                        <p>0</p>
-                        <button type="button" class="order-button" aria-label="">+</button>
+                        <button type="button" class="order-button premium-negative" aria-label="">-</button>
+                        <p class="order-quantity">0</p>
+                        <button type="button" class="order-button premium-addition" aria-label="">+</button>
                     </div>
                 </div>
 
@@ -164,9 +164,9 @@
                     <p>Condensed Milk, Dark Chocolate and White Chocolate</p>
                     <p class="order-price">$22.00</p>
                     <div class="order-buttons">
-                        <button type="button" class="order-button" aria-label="">-</button>
-                        <p>0</p>
-                        <button type="button" class="order-button" aria-label="">+</button>
+                        <button type="button" class="order-button dessert-negative" aria-label="">-</button>
+                        <p class="order-quantity">0</p>
+                        <button type="button" class="order-button dessert-addition" aria-label="">+</button>
                     </div>
                 </div>
 
@@ -179,9 +179,9 @@
                     <p>Heavy Cream, Bananas, Cinnamon and White Chocolate</p>
                     <p class="order-price">$22.00</p>
                     <div class="order-buttons">
-                        <button type="button" class="order-button" aria-label="">-</button>
-                        <p>0</p>
-                        <button type="button" class="order-button" aria-label="">+</button>
+                        <button type="button" class="order-button dessert-negative" aria-label="">-</button>
+                        <p class="order-quantity">0</p>
+                        <button type="button" class="order-button dessert-addition" aria-label="">+</button>
                     </div>
                 </div>
 
@@ -194,9 +194,9 @@
                     <p>Condensed Milk, Dark Chocolate and Strawberry Slices</p>
                     <p class="order-price">$22.00</p>
                     <div class="order-buttons">
-                        <button type="button" class="order-button" aria-label="">-</button>
-                        <p>0</p>
-                        <button type="button" class="order-button" aria-label="">+</button>
+                        <button type="button" class="order-button dessert-negative" aria-label="">-</button>
+                        <p class="order-quantity">0</p>
+                        <button type="button" class="order-button dessert-addition" aria-label="">+</button>
                     </div>
                 </div>
 
@@ -209,7 +209,7 @@
 
         <h3 id="order-complete">Complete Your Order:</h3>
 
-        <form method="get" action="" class="form">
+        <form method="get" action="confirmation.html" class="form">
 
             <div>
                 <label for="name"><span class="p">Your Name (Required)</span></label>

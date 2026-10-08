@@ -343,7 +343,7 @@ footer a {
     color: var(--text-color);
     background-color: var(--green-background);
     border-radius: 10px;
-    padding: 3px;
+    padding: 5px;
     width: 50vw;
     font-size: 3vw;
 }
@@ -353,11 +353,11 @@ footer a {
     border: solid 1px #999;
     border-radius: 4px;
     padding: 0.70rem;
-    width: 40vw;
+    width: 60vw;
     margin-top: 5px;
     margin-bottom: 10px;
     appearance: none;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .form input[type="submit"]{
@@ -384,4 +384,11 @@ footer a {
     font-family: var(--roboto-font);
     font-size: 4vw;
     font-weight: 800;
+}
+
+
+#confirmation-img{
+    margin: 10px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
