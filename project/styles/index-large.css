@@ -36,8 +36,6 @@
         display: block;
     }
 
-
-
     /*               MAIN                      */
 
     main{
@@ -77,7 +75,7 @@
         margin-right: 10px;
         margin-left: 10px;
     }
-
+    /*               MENU PAGE                      */
     .menu-green-background {
         font-size: 2vw;
         width: 30vw;
@@ -90,7 +88,7 @@
     .menu-card p {
         font-size: 1.45vw;
     }
-
+    /*               ORDER PAGE                      */
     .order-card {
         width: 50vw;
     }
@@ -142,11 +140,8 @@
         font-size: 2vw;
     }
     
-    /*               ORDER PAGE                      */
+    /*               CONFIRMATION PAGE                      */
     #confirmation-description {
         font-size: 1.5vw;
     }
-
-
-
 }
