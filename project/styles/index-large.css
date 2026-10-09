@@ -1,4 +1,4 @@
-@media (min-width: 1000px) {
+@media (min-width: 1440px) {
     :root {
         --text-color: #FFFFFF;
         --background-color: #B01022;
@@ -39,6 +39,10 @@
 
 
     /*               MAIN                      */
+
+    main{
+        max-width: 80vw;
+    }
 
     .home-description {
         grid-template-columns: 1fr 1fr;
@@ -137,7 +141,8 @@
     #order-total {
         font-size: 2vw;
     }
-
+    
+    /*               ORDER PAGE                      */
     #confirmation-description {
         font-size: 1.5vw;
     }

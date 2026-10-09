@@ -29,7 +29,6 @@ body {
 
 h2 {
     text-align: center;
-
 }
 
 img {
@@ -102,7 +101,7 @@ header img {
 /*               MAIN                      */
 
 main {
-    max-width: 80vw;
+    max-width: 100vw;
     margin: 0 auto;
     padding-right: 20px;
     padding-left: 20px;
@@ -112,7 +111,6 @@ main {
 .home-description {
     display: grid;
     justify-items: center;
-
 }
 
 .home-description p,
@@ -120,7 +118,6 @@ h2 {
     padding-top: 10px;
     margin-right: 15px;
     margin-left: 15px;
-
 }
 
 main img {
@@ -129,11 +126,6 @@ main img {
     border-radius: 10px;
     margin-top: 20px;
     box-shadow: 0 0 5px #333;
-}
-
-figcaption {
-    text-align: center;
-    font-weight: 700;
 }
 
 .margin-top {
@@ -146,10 +138,7 @@ figcaption {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     place-items: center;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
     padding: 10px;
-
 }
 
 #home-products img {
@@ -226,11 +215,11 @@ footer a {
 
 /*               MENU PAGE                      */
 
-#menu-description{
+#menu-description {
     padding: 20px;
 }
 
-.menu-green-background{
+.menu-green-background {
     padding: 15px;
     margin: 10px;
     background-color: var(--green-background);
@@ -242,28 +231,28 @@ footer a {
     margin-top: 30px;
 }
 
-.menu-card h4{
+.menu-card h4 {
     padding: 5px;
     font-weight: 800;
     font-size: 5vw;
     font-family: var(--roboto-font);
 }
 
-.menu-card p{
+.menu-card p {
     font-size: 3vw;
     padding-top: 3px;
     padding-bottom: 8px;
 }
 
+/*               ORDER PAGE                      */
 
-
-.order-section{
+.order-section {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.order-section img{
+.order-section img {
     width: 100%;
     max-width: 20vw;
     margin-top: 0;
@@ -272,7 +261,7 @@ footer a {
     object-fit: cover;
 }
 
-.order-card{
+.order-card {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -284,14 +273,14 @@ footer a {
     gap: 1px;
 }
 
-.order-description{
+.order-description {
     display: flex;
     flex-direction: column;
     row-gap: 3px;
     font-size: 2.5vw;
 }
 
-.order-buttons{
+.order-buttons {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -299,7 +288,7 @@ footer a {
     font-size: 4vw;
 }
 
-.order-button{
+.order-button {
     width: 6vw;
     height: 6vw;
     border: none;
@@ -308,15 +297,15 @@ footer a {
     font-size: 4vw;
     font-weight: 800;
     cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0,0,0, 0.6);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 
-.order-button:hover{
+.order-button:hover {
     background-color: var(--green-background);
     color: var(--text-color);
 }
 
-.order-price{
+.order-price {
     background-color: #005F16;
     width: 14vw;
     border-radius: 10px;
@@ -327,18 +316,18 @@ footer a {
     font-weight: 700;
 }
 
-#order-complete{
+#order-complete {
     margin-top: 20px;
 }
 
-.form{
+.form {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.form label{
+.form label {
     display: block;
     color: var(--text-color);
     background-color: var(--green-background);
@@ -347,9 +336,10 @@ footer a {
     width: 50vw;
     font-size: 3vw;
 }
+
 .form input[type="text"],
 .form input[type="email"],
-.form input[type="tel"]{
+.form input[type="tel"] {
     border: solid 1px #999;
     border-radius: 4px;
     padding: 0.70rem;
@@ -360,7 +350,7 @@ footer a {
     font-size: 16px;
 }
 
-.form input[type="submit"]{
+.form input[type="submit"] {
     padding: 20px;
     width: 40vw;
     border-radius: 4px;
@@ -371,24 +361,42 @@ footer a {
     color: var(--text-color);
 }
 
-.form input[type="submit"]:hover{
+.form input[type="submit"]:hover {
     font-weight: 800;
 }
 
-.form div{
+.form div {
     margin-top: 10px;
 }
 
-#order-total{
+#order-total {
     margin: 10px;
     font-family: var(--roboto-font);
     font-size: 4vw;
     font-weight: 800;
 }
 
+#submit-button:disabled{
+    background-color: var(--background-color);
+}
 
-#confirmation-img{
+/*               CONFIRMATION PAGE                      */
+#confirmation-img {
     margin: 10px;
     aspect-ratio: 1/1;
     object-fit: cover;
+}
+
+#confirmation-description {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 5vw;
+}
+
+#confirmation-main{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    place-items: center;
 }

@@ -31,5 +31,5 @@ if (ordersSent === 1) {
 const confirmationTime = document.querySelector("#confirmation-time");
 
 if (ordersSent !== 0) {
-    confirmationTime.innerHTML = `Your order will be completed in around 20 Minutes.`
+    confirmationTime.innerHTML = `Your order will be ready for Pickup in around 20 Minutes.`
 }

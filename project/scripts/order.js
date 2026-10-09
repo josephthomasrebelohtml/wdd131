@@ -134,9 +134,15 @@ const totalPrice = document.querySelector("#order-total");
 
 
 function CalculateTotal(array) {
+    const submitButton = document.querySelector("#submit-button");
     const initialValue = 0;
     const total = array.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue,);
     
+    if (total != 0) {
+        submitButton.disabled = false;
+    } else {
+        submitButton.disabled = true;
+    }
     totalPrice.innerHTML = `Total: $${total.toFixed(2)}`;
 }
 
@@ -156,10 +162,6 @@ function RemovePizzaValue(price) {
     
     CalculateTotal(values);
 }
-
-
-
-
 // LocalStorage
 
 const form = document.querySelector(".form")
