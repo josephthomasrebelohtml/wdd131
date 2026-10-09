@@ -203,6 +203,7 @@ footer a {
 
 #references{
     font-size: 3vw;
+    color: var(--text-color);
 }
 
 /*               MENU PAGE                      */
