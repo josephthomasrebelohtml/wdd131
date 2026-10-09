@@ -25,7 +25,7 @@ if (ordersSent === 1) {
 } else if (ordersSent === 0) {
     orders.innerHTML = `Seems like you haven't ordered yet. <br> Visit our Order Website to get started!`
 } else {
-    orders.innerHTML = `${ordersSent} Orders Sent! <br> Thank you for the continued Support!`;
+    orders.innerHTML = `You have sent ${ordersSent} Orders by now! <br> Thank you for the continued Support!`;
 }
 
 const confirmationTime = document.querySelector("#confirmation-time");
